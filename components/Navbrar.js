@@ -6,11 +6,10 @@ import StarIcon from "@material-ui/icons/Star"
 import MovieIcon from "@material-ui/icons/Movie"
 import TvIcon from "@material-ui/icons/Tv"
 import styles from "../styles/Navbar.module.css"
-import { auth, provider } from "../pages/firebase"
+import { auth, provider } from "../firebase"
 import { useSelector, useDispatch } from "react-redux"
 import { selectUser, ADD_USER, DELETE_USER } from "../features/user/UserSlice"
 import { useRouter } from "next/router"
-import Image from "next/image"
 
 const Navbrar = () => {
   const userInfo = useSelector(selectUser)
